@@ -1,5 +1,15 @@
 main {
-background-color: #2f3640;}
+background-color: #2f3640;
+background: #000;
+    
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.9)
+  ), url(../img/main.jpg);}
 
 .logonav{
     width: 200px;
@@ -9,3 +19,21 @@ background-color: #2f3640;}
 .textocar{
     box-shadow: 0 0 20px #e1b12c;
 }
+
+.parallax{
+    background: #000;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.8)
+      ), url(../img/parallaxint.png);
+ }
+ 
+ .parallax-int{
+ 
+    padding: 100px 0 150px 0;
+ }
