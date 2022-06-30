@@ -1,0 +1,76 @@
+{
+  "name": "eldenicons",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "186dec7a13156bbe2550790c158fb85d",
+      "css": "crown",
+      "code": 59460,
+      "src": "fontelico"
+    },
+    {
+      "uid": "36ef9feb0754335302784521267a9ad4",
+      "css": "crown-plus",
+      "code": 59461,
+      "src": "fontelico"
+    },
+    {
+      "uid": "ec8496ef645f3be7b28147ec60cd9ab1",
+      "css": "crown-minus",
+      "code": 59462,
+      "src": "fontelico"
+    },
+    {
+      "uid": "ff16079eb4be12c49bf3014d2322acdd",
+      "css": "github-circled",
+      "code": 59392,
+      "src": "zocial"
+    },
+    {
+      "uid": "aa58e30c7196b1378a6ca78c025cc3b5",
+      "css": "behance",
+      "code": 61876,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagram",
+      "code": 61805,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "pt5lb2orj9ms0n4yyxjavefdukcv1scl",
+      "css": "heart",
+      "code": 59393,
+      "src": "modernpics"
+    },
+    {
+      "uid": "kfzodo12ciruwganzy6h1bee2bpyz24d",
+      "css": "star",
+      "code": 59394,
+      "src": "modernpics"
+    },
+    {
+      "uid": "9d3e9faf68fd4e12def853f0d4e1173b",
+      "css": "whatsapp",
+      "code": 62002,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "00341f8df1496285c31db5988db1d8b5",
+      "css": "grocery-store",
+      "code": 59422,
+      "src": "maki"
+    },
+    {
+      "uid": "d531ea7e8c094b73df941ed0bac921f3",
+      "css": "shopping-bag",
+      "code": 62096,
+      "src": "fontawesome"
+    }
+  ]
+}
