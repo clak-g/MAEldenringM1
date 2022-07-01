@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&display=swap');
+
+body{
+    background-image: url(https://p325k7wa.twic.pics/high/elden-ring/elden-ring/05-characters/elden-ring-characters-gallery-background.jpg?twic=v1/cover-min=820x959);
+    background-attachment: fixed;
+    background-position: center;  
+
+ 
+   
+}
+
+.titulo{
+    margin: 80px;
+}
+
+.logonav{
+    width: 200px;
+}
+
+
+.textocar{
+    box-shadow: 0 0 20px #f3f0e8f3;
+}
+
+.row{
+    align-items: center;
+}
+
+.row h5{
+    color: #e1b12c;
+    font-size: 1.3rem;
+}
+
+.row h3{
+    font-size: 3rem;
+}

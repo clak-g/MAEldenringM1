@@ -11,10 +11,27 @@ background-image: linear-gradient(
     rgba(0, 0, 0, 0.9)
   ), url(../img/main.jpg);}
 
+  .main2{
+    
+      background-color: #2f3640;
+      background: #000;
+          
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: linear-gradient(
+          rgba(164, 164, 164, 0.3),
+          rgba(253, 253, 253, 0.5)
+        ), url(../img/main2.jpg);
+  }
+
   .separador{
     display: block;
     margin: auto;
     width: 80%;
+    padding: 20px;
+    align-items:center ;
     
   }
 .logonav{
@@ -50,3 +67,18 @@ background-image: linear-gradient(
     flex-wrap: wrap;
     
  }
+
+
+ footer{
+
+  background-color: #576574;
+  
+ }
+
+ .redes{
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #1d1d1f;
+ }
+
