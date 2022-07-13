@@ -25,6 +25,19 @@ background-image: linear-gradient(
           rgba(253, 253, 253, 0.5)
         ), url(../img/main2.jpg);
   }
+  .audio{
+    background-color: #2f3640;
+      background: #000;
+          
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: linear-gradient(
+          rgba(164, 164, 164, 0.3),
+          rgba(253, 253, 253, 0.5)
+        ), url(../img/audio.jpg);
+  }
 
   .separador{
     display: block;
