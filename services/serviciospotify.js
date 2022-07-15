@@ -1,9 +1,25 @@
-//receta para consumir API's con JS
+const URIPOST='https://accounts.spotify.com/api/token'
+const DATO1="client_id=4dbae502ab3c450cb3b1af62d9f780e4"
+const DATO2="client_secret=54dc6bb721b444fa9651a0d273e8cd30"
+const DATO3="grant_type=client_credentials"
+const PETICIONPOST ={
+    method:"POST",
+    headers:{
+        "Content-Type":"application/x-www-form-urlencoded"
+    },
+    body:DATO1+"&"+DATO2+"&"+DATO3
 
-//1.PA ONDE VAS
-//LA URI DEL SERVICIO
-
-const URI ="https://api.spotify.com/v1/artists/1DdhScDGl9AceKnbvgkFgz/top-tracks?market=US"
+}
+fetch(URIPOST,PETICIONPOST)
+.then(function(respuesta){
+    return respuesta.json()
+})
+.then(function(respuesta){
+    console.log(respuesta)
+    //armando el token
+    const TOKEN = respuesta.token_type+" "+respuesta.access_token
+    console.log(TOKEN)
+    const URI ="https://api.spotify.com/v1/artists/1DdhScDGl9AceKnbvgkFgz/top-tracks?market=US"
 
 const URI2 ="https://api.spotify.com/v1/artists/5awFg11m6qCdmOsy8LxEvc/top-tracks?market=US"
 
@@ -13,15 +29,15 @@ const URI2 ="https://api.spotify.com/v1/artists/5awFg11m6qCdmOsy8LxEvc/top-track
 const PETICION={
     method:'GET',
     headers : {
-        Authorization:"Bearer BQBbCSl5VDBFtdMbS_24QGmMjkGr0_ekb7W5n1XbD3afmQw_pmU8vU3WffgoIvx2c7vYAvcZto6SWCgeb06w3V0dDHRNprNZLkr0c8JwZW_-Jst5DVM7gJMpghwW8vmpFxSxQrUO9VdS_3NI6rDY86_y6pi41UWKK3Jc"
-    }
+        Authorization: TOKEN}
+
 }
 
 //3. ARRANQUE PUES MIJO
 //CONSUMA EL API
 
 //promesa (funcion asincrona)
-fetch(URI2,PETICION)
+fetch(URI,PETICION)
 .then(function(respuesta){
         return respuesta.json()//me aseguro del formato de respuesta
 })
@@ -105,3 +121,14 @@ function pintarCanciones(canciones){
 
 
 }
+
+})
+.catch(function(respuesta){
+    console.log(respuesta)
+})
+
+//receta para consumir API's con JS
+
+//1.PA ONDE VAS
+//LA URI DEL SERVICIO
+
