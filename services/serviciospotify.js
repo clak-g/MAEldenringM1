@@ -33,11 +33,17 @@ const PETICION={
 
 }
 
+
+
+
+
 //3. ARRANQUE PUES MIJO
 //CONSUMA EL API
 
 //promesa (funcion asincrona)
-fetch(URI,PETICION)
+
+
+fetch(URI2,PETICION)
 .then(function(respuesta){
         return respuesta.json()//me aseguro del formato de respuesta
 })
@@ -74,7 +80,7 @@ function pintarCanciones(canciones){
 
         //2.2 Creando la tarjeta
         let tarjeta = document.createElement("div")
-        tarjeta.classList.add("card","h-100","shadow")
+        tarjeta.classList.add("card","h-100","shadow","p-3","text-white", "bg-dark", "mb-3")
 
         //2.3 creando el campo de audio
         let audio = document.createElement("audio");
@@ -86,7 +92,7 @@ function pintarCanciones(canciones){
 
         //2.4 creando el nombre de la cancion
         let nombreCancion=document.createElement("h5");
-        nombreCancion.classList.add("text-center");
+        nombreCancion.classList.add("text-center","p-2","font");
         nombreCancion.textContent=cancion.name
 
     //2.5 creando la foto del album
@@ -96,20 +102,20 @@ function pintarCanciones(canciones){
 
     //popularidad
 
-    let popularidad = document.createElement("h6");
+    /*let popularidad = document.createElement("h6");
     popularidad.classList.add("text-center", "fw-bold","text-info")
     popularidad.textContent="popularidad: "+cancion.popularity;
 
     //track number
     let number = document.createElement("h5");
     number.classList.add("text-center", "fw-bold")
-    number.textContent=cancion.track_number
+    number.textContent=cancion.track_number*/
 
         //FINAL DEFINO JERARQUIAS (PADRES E HIJOS)
         tarjeta.appendChild(fotoAlbum)
-        tarjeta.appendChild(number)
+      //  tarjeta.appendChild(number)
         tarjeta.appendChild(nombreCancion)
-        tarjeta.appendChild(popularidad);
+        //tarjeta.appendChild(popularidad);
         tarjeta.appendChild(audio);
        
         
