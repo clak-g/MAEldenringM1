@@ -84,7 +84,15 @@ background-image: linear-gradient(
 
  footer{
 
-  background-color: #576574;
+  background-color: #d2dae2;
+  background-image: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(110, 110, 110, 0.8)
+      ), url(../img/main2.jpg);
+      background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
   
  }
 
@@ -99,3 +107,21 @@ background-image: linear-gradient(
   font-family: 'Cormorant SC', serif;
 }
 
+body{
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 1.3rem;
+}
+
+
+.registro{
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 1.3rem;
+  background-color: #d2dae2;
+  background-image: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(110, 110, 110, 0.8)
+      ), url(../img/main2.jpg);
+      background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
