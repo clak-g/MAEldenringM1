@@ -8,18 +8,28 @@ boton.addEventListener("click",function(evento){
     let email = document.getElementById("email").value
     let password  = document.getElementById("password").value
 
-    console.log(email, password)
+ 
+    const auth = getAuth();
+
+    //
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in
     const user = userCredential.user;
+
+    console.log(userCredential)
+    let usuario= document.getElementById("usuario")
+    usuario.textContent="bienvenido "+user
+    alert("exito en el registro, bienvenido")
     // ...
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
+    alert("ups fallamos"+errorMessage)
+
     // ..
   });
 
-    const auth = getAuth();
+  
 })
