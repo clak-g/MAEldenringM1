@@ -1,35 +1,48 @@
-import {getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js"
-let boton=document.getElementById('boton')
+import { getAuth, createUserWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js"
+let boton = document.getElementById('boton')
+let botonsalir = document.getElementById('boton2')
 
-boton.addEventListener("click",function(evento){
+boton.addEventListener("click", function (evento) {
 
-    evento.preventDefault()
-   
-    let email = document.getElementById("email").value
-    let password  = document.getElementById("password").value
+  evento.preventDefault()
 
- 
-    const auth = getAuth();
+  let email = document.getElementById("email").value
+  let password = document.getElementById("password").value
 
-    //
-    createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in
-    const user = userCredential.user;
 
-    console.log(userCredential)
-    let usuario= document.getElementById("usuario")
-    usuario.textContent="bienvenido "+user
-    alert("exito en el registro, bienvenido")
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    alert("ups fallamos"+errorMessage)
+  const auth = getAuth();
 
-    // ..
-  });
+  //
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in
+      const user = userCredential.user;
+
+      console.log(userCredential)
+
+      alert("exito en el registro, bienvenido")
+      window.location.href = "../registro.html"
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert("ups fallamos" + errorMessage)
+
+      // ..
+    });
 
   
+
+
+})
+
+botonsalir.addEventListener("click", function () {
+  const auth = getAuth();
+  signOut(auth).then(() => {
+    // Sign-out successful.
+  }).catch((error) => {
+    // An error happened.
+  });
+
 })
