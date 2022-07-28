@@ -31,6 +31,6 @@ body{
     font-size: 1.3rem;
 }
 
-.row h3{
-    font-size: 3rem;
+main .row h3{
+    font-size: 2rem;
 }

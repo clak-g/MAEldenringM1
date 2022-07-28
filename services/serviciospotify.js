@@ -80,7 +80,7 @@ function pintarCanciones(canciones){
 
         //2.2 Creando la tarjeta
         let tarjeta = document.createElement("div")
-        tarjeta.classList.add("card","h-100","shadow","p-3","text-white", "bg-dark", "mb-3")
+        tarjeta.classList.add("card","h-100","shadow","p-3","text-white", "bg-dark", "mb-3", "animate__animated", "animate__zoomIn", "wow")
 
         //2.3 creando el campo de audio
         let audio = document.createElement("audio");
