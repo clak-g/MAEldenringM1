@@ -1,6 +1,6 @@
-import { getAuth, createUserWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js"
+import { getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js"
 let boton = document.getElementById('boton')
-let botonsalir = document.getElementById('boton2')
+
 
 boton.addEventListener("click", function (evento) {
 
@@ -37,12 +37,3 @@ boton.addEventListener("click", function (evento) {
 
 })
 
-botonsalir.addEventListener("click", function () {
-  const auth = getAuth();
-  signOut(auth).then(() => {
-    // Sign-out successful.
-  }).catch((error) => {
-    // An error happened.
-  });
-
-})
